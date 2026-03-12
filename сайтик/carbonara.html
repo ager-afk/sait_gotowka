@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепт карбонары | Мои рецепты</title>
+    <style>
+        /* --- ВСТАВЬТЕ СЮДА ВЕСЬ ВАШ CSS (как в файле index.html) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            color: #222;
+            line-height: 1.5;
+        }
+        header {
+            background-color: #d3d3d3;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #a9a9a9;
+        }
+        header h1 {
+            font-size: 32px;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .recipe-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .recipe-nav a {
+            background-color: #fff;
+            padding: 10px 25px;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.1s;
+        }
+        .recipe-nav a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-left: 2px solid #aaa;
+            border-right: 2px solid #aaa;
+        }
+        .recipe-card {
+            background-color: #fff;
+            border: 3px solid #000;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .recipe-card h2 {
+            font-size: 30px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .recipe-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .dish-photo {
+            width: 250px;
+            height: 200px;
+            border: 2px solid #000;
+            background-color: #d9d9d9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;
+            text-indent: -9999px;
+        }
+        .recipe-text {
+            flex: 1;
+            min-width: 250px;
+        }
+        .recipe-text h3 {
+            font-size: 22px;
+            border-bottom: 1px solid #333;
+            margin: 15px 0 10px 0;
+            padding-bottom: 3px;
+        }
+        .recipe-text ul, .recipe-text ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        .recipe-text li {
+            margin-bottom: 5px;
+        }
+        .recipe-text p {
+            background-color: #f0f0f0;
+            border: 2px solid #aaa;
+            padding: 10px;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 3px solid #000;
+            background-color: #d3d3d3;
+            font-weight: bold;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        @media (max-width: 600px) {
+            .recipe-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .dish-photo {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>МОИ РЕЦЕПТЫ</h1>
+    <p>Что я - АРТЕМ РЕАЛЬНО готовил</p>
+</header>
+
+<!-- НАВИГАЦИЯ -->
+<div class="container">
+    <div class="recipe-nav">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="lasagna.html">ЛАЗАНЬЯ</a>
+        <a href="potato.html">КАРТОШКА</a>
+        <a href="carbonara.html">КАРБОНАРА</a>
+    </div>
+</div>
+
+<main class="container">
+    <!-- ТОЛЬКО РЕЦЕПТ КАРБОНАРЫ -->
+    <section class="recipe-card">
+        <h2>ПАСТА КАРБОНАРА</h2>
+        <div class="recipe-content">
+            <!-- ФОТО КАРБОНАРЫ -->
+            <div class="dish-photo" style="background-image: url('karbonara_image.jpg');">
+                Фото карбонары
+            </div>
+            <div class="recipe-text">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>Спагетти - 300 г</li>
+                    <li>Яйца - 3 шт (желтки)</li>
+                    <li>Панчетта (бекон) - 150 г</li>
+                    <li>Сыр Пекорино/Пармезан - 100 г</li>
+                    <li>Чеснок, перец</li>
+                </ul>
+                <h3>Приготовление:</h3>
+                <ol>
+                    <li>Спагетти отвари до готовности.</li>
+                    <li>Обжарь панчетту с чесноком.</li>
+                    <li>Смешай желтки с тертым сыром и перцем.</li>
+                    <li>Смешай горячие спагетти с яйцами и беконом, добавь немного воды от варки.</li>
+                </ol>
+                <p>НУУУУ ТАКОЕ НА ЛЮБИТЕЛЯ НО КОГДА В ПЕРВЫЙ РАЗ ПРОБУЕШЬ ОЧ ВКУСНО</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    ЯЯЯЯ ГОТОВИЛ ЭТО ДЕРЬМО АРТЕМ ГЕРАСИМЕНКО 2025 - 2026
+</footer>
+
+</body>
+</html>
